@@ -1,0 +1,22 @@
+.footer {
+    background-color: var(--hero-background-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+}
+
+.footer__logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+
+    display: inline-block;
+    margin-bottom: 20px;
+}

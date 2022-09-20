@@ -1,0 +1,137 @@
+/* Кнопка герой */
+.hero__btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--white-text-color);
+        color: var(--accent-color);
+    }}
+
+/* Кнопка-форма-півал */
+.footer-form__btn {
+    width: 200px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    margin: 0;
+    padding: 8px 28px;
+    border-radius: 4px;
+
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--white-text-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
+}
+
+.icon-send {
+    margin-left: 10px;
+}
+
+/* Кнопка модалка */
+.modal-form__btn {
+    @extend %align;
+    margin: 0 auto;
+    padding: 10px 56px;
+
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--white-text-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+}}
+
+/* Кнопка закрити модалку */
+.close-btn {
+    position: absolute;
+    @extend %align;
+
+    right: 8px;
+    top: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.close-btn:hover .modal-icon {
+    fill: var(--accent-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Кнопки фільтри портфоліо */
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.btn__category {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--team-background-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
+
+    display: inline-block;
+    min-width: 73px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 6px 22px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--white-text-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}}

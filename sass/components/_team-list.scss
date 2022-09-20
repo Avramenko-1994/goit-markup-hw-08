@@ -1,0 +1,107 @@
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--team-background-color);
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+.team__item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (max-width: 479px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+
+.worker {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    
+    @media screen and (min-width: 1200px) {
+        padding: 30px 0px;
+    }
+}
+
+.worker__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+
+    margin-bottom: 10px;
+}
+
+.worker__prof {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-bottom: 16px;
+}
+
+.worker__social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 32px;
+
+    list-style: none;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+}
+}
+
+.worker__social-item {
+    width: 44px;
+    height: 44px;
+}
+
+.worker__social-link {
+    @extend %align;
+    
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #afb1b8;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+    color: #ffffff;
+    background-color: var(--accent-color);
+}}
+
+.worker__social-icon {
+    fill: currentColor;
+}
+
