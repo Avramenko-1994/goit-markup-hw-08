@@ -1,15 +1,17 @@
 .footer-form__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media screen and (min-width: 768px) {
-    
-    }
-
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
         padding-top: 10px;
     }
+}
+
+.footer-form {
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 .footer-form__text {
@@ -38,7 +40,7 @@
         width: 450px;
         margin-bottom: 20px;
     }
-
+    
     margin: 0;
     padding: 13px 16px;
     border-radius: 4px;

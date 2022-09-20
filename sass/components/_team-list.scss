@@ -82,6 +82,9 @@
 }
 
 .worker__social-item {
+    @media screen and (max-width: 1199px) {
+        margin: 0 5px;
+    }
     width: 44px;
     height: 44px;
 }

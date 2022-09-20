@@ -101,8 +101,22 @@
 /* Кнопки фільтри портфоліо */
 .btn {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    
+        margin-bottom: 40px;
+    
+        grid-gap: 8px;
+        grid-row-gap: 15px;
+    
+        @media (min-width: 768px) {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    
+        @media (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
 }
 
 .btn__item:not(:last-child) {
