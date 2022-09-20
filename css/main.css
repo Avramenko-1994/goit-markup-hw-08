@@ -675,6 +675,11 @@ img {
   fill: currentColor;
 }
 
+.footer-form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media screen and (min-width: 1200px) {
   .footer-form__container {
     margin-left: 93px;
