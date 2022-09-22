@@ -491,8 +491,8 @@ img {
 }
 
 .client {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .client {
@@ -581,7 +581,7 @@ img {
     display: flex;
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 768px) {
   .footer__position {
     display: flex;
     align-items: baseline;
@@ -701,16 +701,16 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-form {
-    display: block;
-  }
-}
 @media screen and (min-width: 768px) {
   .footer-form {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: block;
   }
 }
 
