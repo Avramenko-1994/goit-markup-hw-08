@@ -254,7 +254,7 @@ img {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero-mobile_2x.jpg");
     background-repeat: no-repeat;
@@ -270,7 +270,7 @@ img {
     background-size: cover;
   }
 }
-@media (min-width: 469px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 469px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 469px) and (min-device-pixel-ratio: 2), screen and (min-width: 469px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 469px) and (min-resolution: 192dpi), screen and (min-width: 469px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero-tab_2x.jpg");
     background-repeat: no-repeat;
@@ -286,7 +286,7 @@ img {
     background-size: cover;
   }
 }
-@media (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero-desk_2x.jpg");
     background-repeat: no-repeat;
@@ -965,8 +965,8 @@ img {
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 320px;
+  height: 609px;
   background: var(--white-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1108,10 +1108,8 @@ img {
   margin-left: 4px;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1, 71;
   letter-spacing: 0.03em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  font-size: 10px;
+  line-height: 1, 19;
   color: #2196F3;
 }/*# sourceMappingURL=main.css.map */
