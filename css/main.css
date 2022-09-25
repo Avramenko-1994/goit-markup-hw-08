@@ -234,6 +234,49 @@ img {
   align-items: center;
 }
 
+.header {
+  background-color: var(--white-background-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.header__logo {
+  width: 145px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.logo--black {
+  color: var(--black-logo-color);
+}
+
+.logo--white {
+  color: var(--white-text-color);
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: var(--white-background-color);
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button .is-open .icon-cross {
+  display: block;
+}
+
+.menu-button .is-open .icon-menu {
+  display: none;
+}
+
 .hero {
   background-color: var(--hero-background-color);
   text-align: center;
