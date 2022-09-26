@@ -517,6 +517,11 @@ img {
   border-radius: 2px;
   background-color: var(--accent-color);
 }
+@media screen and (max-width: 767px) {
+  .active::after {
+    display: none;
+  }
+}
 
 .hero {
   background-color: var(--hero-background-color);
