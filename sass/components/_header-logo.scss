@@ -19,23 +19,3 @@
 .logo--white {
     color: var(--white-text-color);
 }
-
-.menu-button {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: var(--white-background-color);
-}
-
-.menu-button .icon-cross {
-    display: none;
-}
-
-.menu-button .js-open-menu .icon-cross {
-    display: block;
-}
-
-.menu-button .js-open-menu .icon-menu {
-    display: none;
-}

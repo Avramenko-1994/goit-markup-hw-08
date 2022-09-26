@@ -239,6 +239,100 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767px) {
+  .header__section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-toggle {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 0 0 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateY(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.menu-container .menu-toggle:hover {
+  fill: #2196F3;
+}
+
 .header__logo {
   width: 145px;
   font-family: "Raleway";
@@ -255,26 +349,6 @@ img {
 
 .logo--white {
   color: var(--white-text-color);
-}
-
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: var(--white-background-color);
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button .js-open-menu .icon-cross {
-  display: block;
-}
-
-.menu-button .js-open-menu .icon-menu {
-  display: none;
 }
 
 .hero {

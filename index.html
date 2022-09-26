@@ -26,23 +26,84 @@
           <a class="header__logo link" href="index.html"
             >Web<span class="header__logo logo--black">Studio</span></a
           >
-          <!-- Бургер кнопка -->
-          <button type="button" class="menu-button js-open-menu">
-            <svg
-              width="40px"
-              height="40px"
-              aria-label="Перемикач мобільного меню"
-            >
-              <use
-                class="icon-cross"
-                href="./images/symbol-defs.svg#icon-cross"
-              ></use>
-              <use
-                class="icon-menu"
-                href="./images/symbol-defs.svg#icon-menu"
-              ></use>
+          <!-- Мобільне меню -->
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
             </svg>
           </button>
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <ul class="mobile-nav list">
+              <li>
+                <a class="mobile-nav__link link active" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li><a class="mobile-nav__link link" href="">Портфоліо</a></li>
+              <li><a class="mobile-nav__link link" href="">Контакти</a></li>
+            </ul>
+            <ul class="mobile-contacts list">
+              <li>
+                <a class="mobile-contacts-phone link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mobile-contacts-email link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-social list">
+              <li>
+                <a
+                  class="mobile-social__link link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mobile-social__link link"
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mobile-social__link link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mobile-social__link link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
           <!--Навігація-->
           <ul class="nav list">
             <li class="nav__item">
