@@ -83,7 +83,7 @@
 }
 
 .menu-container.is-open {
-    transform: translateY(0);
+    display: block;
 }
 
 .menu-container .menu-toggle {
