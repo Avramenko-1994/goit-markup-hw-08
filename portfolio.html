@@ -170,13 +170,42 @@
             <li class="portfolio__item">
               <a class="portfolio__link link" href=""
                 ><div class="thumb">
-                  <img
-                    srcset="./images/img7.jpg 1x,
-                            ./images/img7 2x.jpg 2x;"
-                    src="./images/img7.jpg"
-                    alt="Веб-сайт"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images1/web-site-tel.jpg   1x,
+                        ./images1/web-site-tel2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images1/web-site-tab.jpg   1x,
+                        ./images1/web-site-tab2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/web-site-desk.jpg   1x,
+                        ./images/web-site-desk2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/web-site-tab.jpg 1x,
+                        ./images/web-site-tel.jpg 2x
+                      "
+                      src="./images/web-site-desk.jpg"
+                      alt="Веб-сайт"
+                    />
+                  </picture>
                   <p class="thumb__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
