@@ -260,13 +260,33 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                srcset="./images/img3.jpg 1x,
-                        ./images/img3 2x.jpg 2x;"
-                src="./images/img3.jpg"
-                alt="Дизайнер продукту"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="./images/ihor-tel.jpg 1x, ./images/ihor-tel2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="./images/ihor-tab.jpg 1x, ./images/ihor-tab2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/ihor-desk.jpg   1x,
+                    ./images/ihor-desk2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  srcset="./images/ihor-tab.jpg 1x, ./images/ihor-tel.jpg 2x"
+                  src="./images/ihor-desk.jpg"
+                  alt="Дизайнер продукту"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__title">Ігор Дем'яненко</h3>
                 <p class="worker__prof">Product Designer</p>
@@ -313,13 +333,33 @@
             </li>
 
             <li class="team__item">
-              <img
-                srcset="./images/img4.jpg 1x,
-                        ./images/img4 2x.jpg 2x;"
-                src="./images/img4.jpg"
-                alt="Фронтенд розробник"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="./images/olga-tel.jpg 1x, ./images/olga-tel2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="./images/olga-tab.jpg 1x, ./images/olga-tab2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/olga-desk.jpg   1x,
+                    ./images/olga-desk2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  srcset="./images/olga-tab.jpg 1x, ./images/olga-tel.jpg 2x"
+                  src="./images/olga-desk.jpg"
+                  alt="Фронтенд розробник"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__title">Ольга Рєпіна</h3>
                 <p class="worker__prof">Frontend Developer</p>
@@ -366,13 +406,30 @@
             </li>
 
             <li class="team__item">
-              <img
-                srcset="./images/img5.jpg 1x,
-                        ./images/img5 2x.jpg 2x;"
-                src="./images/img5.jpg"
-                alt="Маркетолог"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="./images/nik-tel.jpg 1x, ./images/nik-tel2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="./images/nik-tab.jpg 1x, ./images/nik-tab2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+
+                <source
+                  srcset="./images/nik-desk.jpg 1x, ./images/nik-desk2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  srcset="./images/nik-tab.jpg 1x, ./images/nik-tel.jpg 2x"
+                  src="./images/nik-desk.jpg"
+                  alt="Маркетолог"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__title">Микола Тарасов</h3>
                 <p class="worker__prof">Marketing</p>
@@ -419,13 +476,30 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/img6.jpg"
-                srcset="./images/img6.jpg 1x,
-                        ./images/img6 2x.jpg 2x;"
-                alt="Дизайнер інтерфейсу користувача"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="./images/mih-tel.jpg 1x, ./images/mih-tel2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="./images/mih-tab.jpg 1x, ./images/mih-tab2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+
+                <source
+                  srcset="./images/mih-desk.jpg 1x, ./images/mih-desk2x.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  srcset="./images/mih-tab.jpg 1x, ./images/mih-tel.jpg 2x"
+                  src="./images/mih-desk.jpg"
+                  alt="Дизайнер інтерфейсу користувача"
+                />
+              </picture>
               <div class="worker">
                 <h3 class="worker__title">Михайло Єрмаков</h3>
                 <p class="worker__prof">UI Designer</p>
